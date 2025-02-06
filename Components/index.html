@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssLayout</title>
+    <style>
+        .container{
+            border: 4px solid black;
+            flex-direction: column;
+            height: 100vh   ;
+            flex-wrap: wrap;
+            text-align: center;
+           
+        }
+        .container>nav{
+            border: 2px solid black;
+            height: 10vh;
+            background-color: lightcoral;
+            margin: 10px;
+
+         } 
+        .hero{
+            display: flex;
+            height: 80vh;
+        }
+
+
+       .sidebar{
+            width: 25%;
+            margin : 10px;
+        }
+
+        .sidebar>.upper-box>H1{
+            text-align: center;
+        }
+        .sidebar>.upper-box>a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .hero>.sidebar>.upper-box{
+            border: 2px solid black;
+            width: 100%;
+            height: 50%;
+            background-color: lightcoral;
+        }
+        .lower-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 100%;
+           
+        }
+       .lower-box>img , .lower-box>video{
+            
+            max-width : 70%;
+            max-height: 100%;
+            object-fit: contain;
+
+
+        }
+  
+        .hero>.sidebar>.lower-box{
+            border: 2px solid black;
+            height: 50%;
+            width: 100%;
+            background-color: rgb(196, 31, 31);
+            
+        }
+
+        .hero>.content>h1{
+            text-align: center;
+            font-size: 1rem;
+        }
+        .hero>.content{
+            border: 2px solid black;
+            width: 75%;
+            margin : 10px;
+            text-align: center;
+        }
+   
+
+        footer{
+            border: 2px solid black;
+            height: 10vh;
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>NAVBAR</nav>
+        
+        <div class="hero">
+            <div class="sidebar">
+                <div class="upper-box">
+                    <h1>Heading</h1>
+                    <a href="./boxmodel.html">Link1</a>
+                    <a href="./boxmodel.html">Link2</a>
+                </div>
+                <div class="lower-box">
+                    <IMG src="../assets/Hanuman (1).jpg"></IMG>
+                    <video src="https://www.youtube.com/watch?v=RkwbGuL-dzo" controls></video>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Hero Section</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi cumque eos, provident fugit autem illum eaque quibusdam rem distinctio amet libero, optio nostrum rerum, ex voluptatum ducimus voluptas natus blanditiis minus. Architecto error fuga nulla modi officiis accusamus cum vero sequi adipisci, placeat, delectus libero. Et facere sequi illum!</p>
+            </div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

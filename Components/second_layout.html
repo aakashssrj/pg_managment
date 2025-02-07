@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Layout</title>
+
+    <style>
+        
+        .container{
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container>div{
+            margin : 10px;
+        }
+
+        .header{
+            height: 10%;
+            border: 2px solid black;
+        }
+        
+        .second-section{
+            display: flex;
+            flex-direction: row;
+            height: 45%;
+        }
+        
+        .left{
+            width: 60%;
+        }
+        .left>div{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+        .hero{ 
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            height: 55%;
+
+        }
+        .Sidebar{            
+            height: 45% ;
+        }
+        .right{
+            width : 40%;
+        }
+        .right>div{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+
+        .MAin-Content{
+            height: 70%;
+        }
+        .Extra-Content{
+            height: 30%;
+        }
+
+        .third-section{
+            display: flex;
+            height: 25%;
+            margin: 10px;
+        }
+
+        .third-section>div{
+            border : 2px solid black;
+            
+            width: calc(80% - 5px);
+        }
+        .footer{
+            height:20px ;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class = "header">Header</div>
+        <div  class = "second-section">
+            <div class = "left">
+                <div class="hero">Hero</div>
+                <div  class = "Sidebar">Sidebar</div>
+            </div>
+            <div  class = "right">
+                <div  class = "MAin-Content">MAin-Content</div>
+                <div  class = "Extra-Content" >Extra-Content </div>
+            </div>
+        </div>
+        <div  class = "third-section">
+            <div class="Related-Images">Related-Images</div>
+            <div  class = "Related-posts">Related-posts</div>
+        </div>
+        <div  class = "footer">Footer</div>
+    </div>
+</body>
+</html>

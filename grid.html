@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100%;
+            gap : 1rem ;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);`
+            grid-template-rows:repeat(3, 1fr);
+            grid-template-areas:" div1 div1 div1"
+                                "div4 div5 div5"
+                                "div2 div5 div5";
+
+        }
+
+        .div1:hover{
+            border-radius: 50%;
+            transform: rotateX(90deg);
+            transition : transform 3s ease-in-out 3s;
+
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="div1" style="background-color: rgb(187, 12, 12); grid-area: div1;" >div1</div>
+        <div class="div2"  style="background-color: rgb(34, 126, 126); grid-area: div2">div2</div>
+        <div class="div3"  style="background-color: rgb(14, 94, 28); grid-area: div3">div3</div>
+        <div class="div4"  style="background-color: rgb(15, 214, 81); grid-area: div4">div4</div>
+        <div class="div5"  style="background-color: rgb(46, 23, 128); grid-area: div5">div5</div>
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(162, 162, 202);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 10px;
+        }
+        .card1 , .card2{
+            height: 170px;
+            width: 50%;
+        }
+        
+        .card1{
+            background-color: rgb(161, 218, 218);
+            z-index: 2;
+        }
+
+        .card2{
+            background-color: rgb(24, 46, 46);
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card1" > Hello</div>
+        <div class="card2"> world</div>
+
+    </div>
+</body>
+</html>
